@@ -23,7 +23,7 @@ dict_pairs = {
 }
 
 # Read the CSV file and filter rows based on the 'pair1' or 'pair2' column containing currency pairs from 'list_pairs'
-df = pd.read_csv(path_corr)
+df = pd.read_csv(path_corr, skiprows=[0, 1, 2])
 filtered_df = df[(df['pair1'].isin(list_pairs) | df['pair2'].isin(list_pairs)) & df['pair2'].isin(list_pairs)]
 
 # Create two new columns 'liquidity_pair_1' and 'liquidity_pair_2' in the DataFrame 'filtered_df'
