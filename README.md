@@ -7,13 +7,16 @@ Suppose we have a set of currency pairs $C$, and our goal is to select a subset 
 2. **Minimize the sum of correlation**: Correlation refers to the degree of association between the price movements of two currency pairs. For each combination $G$ of 5 currency pairs, we calculate the correlation $y_i$ associated with each currency pair $i$ in $G$. To simplify the optimization problem, we consider the absolute value of the correlation $|y_i|$ so that we only care about the strength of the relationship, not its direction. The sum of correlation for the group $G$ is denoted as $\text{sum\_correlation}(G) = \sum_{i \in G} |y_i|$. Our objective is to find the subset $G^*$ that minimizes the sum of correlation $\text{sum\_correlation}(G^*)$.
 
 The optimization problem can be mathematically formulated as follows:
+Find \(G^*\) such that:
 
-Find $G^*$ such that
+\[
+G^* = \underset{G \in \text{combinations}}{\text{argmax}} \left( \sum_{i \in G} x_i \right)
+\]
 
-\[ G^* = \underset{G \in \text{combinations}}{\text{argmax}} \left( \sum_{i \in G} x_i \right) \]
+subject to:
 
-subject to
-
-\[ \text{sum\_correlation}(G^*) = \underset{G \in \text{combinations}}{\text{min}} \left( \sum_{i \in G} |y_i| \right) \]
+\[
+\text{sum\_correlation}(G^*) = \underset{G \in \text{combinations}}{\text{min}} \left( \sum_{i \in G} |y_i| \right)
+\]
 
 Once the optimization problem is solved, $G^*$ will represent the group of 5 currency pairs that maximizes the sum of liquidity and minimizes the sum of correlation, and $\text{sum\_liquidity}(G^*)$ and $\text{sum\_correlation}(G^*)$ will represent the maximum sum of liquidity and minimum sum of correlation, respectively.
