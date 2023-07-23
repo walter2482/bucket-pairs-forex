@@ -9,8 +9,7 @@ Suppose we have a set of currency pairs C, and our goal is to select a subset G 
 The optimization problem can be mathematically formulated as follows:
 Find G^* such that:
 
-G^* = \underset{G \in \text{combinations}}{\operatorname{argmax}} \left( \sum_{i \in G} x_i \right)
-
+\[ G^* = \underset{G \in \text{combinations}}{\operatorname{argmax}} \left( \sum_{i \in G} x_i \right) \]
 
 subject to:
 
