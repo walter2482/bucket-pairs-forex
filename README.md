@@ -10,13 +10,13 @@ The optimization problem can be mathematically formulated as follows:
 Find \(G^*\) such that:
 
 \[
-G^* = \underset{G \in \text{combinations}}{\text{argmax}} \left( \sum_{i \in G} x_i \right)
+G^* = \underset{G \in \text{combinations}}{\operatorname{argmax}} \left( \sum_{i \in G} x_i \right)
 \]
 
 subject to:
 
 \[
-\text{sum\_correlation}(G^*) = \underset{G \in \text{combinations}}{\text{min}} \left( \sum_{i \in G} |y_i| \right)
+\text{sum\_correlation}(G^*) = \underset{G \in \text{combinations}}{\operatorname{min}} \left( \sum_{i \in G} |y_i| \right)
 \]
 
 Once the optimization problem is solved, $G^*$ will represent the group of 5 currency pairs that maximizes the sum of liquidity and minimizes the sum of correlation, and $\text{sum\_liquidity}(G^*)$ and $\text{sum\_correlation}(G^*)$ will represent the maximum sum of liquidity and minimum sum of correlation, respectively.
