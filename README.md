@@ -7,13 +7,11 @@ The pie chart displays the distribution of liquidity associated with different c
 This chart provides a clear visualization of how liquidity is distributed among specific currency pairs, which can help traders make informed decisions when designing trading strategies and building well-diversified portfolios.
 
 For more information on the most liquid currency pairs, you can visit [this link](https://fxssi.com/most-liquid-currency-pairs).
+<div align="center">
+  <img src="https://github.com/walter2482/bucket-pairs-forex/assets/93685420/7ac55c31-8e6e-4536-ab3c-3944189bb10b" alt="Currency Pair Liquidity" style="max-width: 400px;">
+</div>
 
 
 <p align="center">
   <img src="https://github.com/walter2482/bucket-pairs-forex/assets/93685420/1a22853d-3c02-4a04-a9fd-f0c6b35c5d68" alt="image" style="width: 150%; max-width: 1200px;">
 </p>
-
-<div align="center">
-  <img src="https://github.com/walter2482/bucket-pairs-forex/assets/93685420/7ac55c31-8e6e-4536-ab3c-3944189bb10b" alt="Currency Pair Liquidity" style="max-width: 400px;">
-</div>
-
